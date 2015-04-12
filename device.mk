@@ -20,6 +20,9 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 
+PRODUCT_COPY_FILES += \
+	device/samsung/toro/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
