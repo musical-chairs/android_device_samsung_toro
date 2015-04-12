@@ -13,6 +13,7 @@ ro.telephony.default_cdma_sub=0
 
 # Enable code specific to toro's RIL
 ro.telephony.toroRIL=1
+ro.telephony.ril.config=usevoicetechfordata,writeaid
 
 # Turn on IMS by default
 persist.radio.imsregrequired=1
