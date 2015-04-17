@@ -12,18 +12,24 @@ ro.telephony.call_ring.multiple=0
 ro.telephony.default_cdma_sub=0
 
 # Enable code specific to toro's RIL
-ro.telephony.toroRIL=1
+ro.telephony.toro_apm_fix=1
 ro.telephony.ril.config=usevoicetechfordata,writeaid
 
 # Turn on IMS by default
 persist.radio.imsregrequired=1
 persist.radio.imsallowmtsms=1
 
+# Store correct IMSI when retreived from SIMRecords and use it for Ruim Records
+ro.telephony.get_imsi_from_sim=true
+
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
+
+# Don't consider Out Of Service as data call disconnect
+persist.telephony.oosisdc=false
 
 # Default CDMA/LTE values from 4.2.2 OTA
 ro.cdma.home.operator.numeric=310004
