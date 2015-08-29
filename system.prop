@@ -17,6 +17,9 @@ ro.telephony.ril.config=usevoicetechfordata,writeaid
 # Don't power down SIM in airplane mode
 persist.radio.apm_sim_not_pwdn=1
 
+# Restore data when leaving airplane mode
+ro.telephony.toro_apm_fix=1
+
 # Turn on IMS by default
 persist.radio.imsregrequired=1
 persist.radio.imsallowmtsms=1
