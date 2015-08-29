@@ -14,6 +14,9 @@ ro.telephony.default_cdma_sub=0
 # Enable RIL compatiblilty features
 ro.telephony.ril.config=usevoicetechfordata
 
+# Restore data when leaving airplane mode
+ro.telephony.toro_apm_fix=1
+
 # Turn on IMS by default
 persist.radio.imsregrequired=1
 persist.radio.imsallowmtsms=1
