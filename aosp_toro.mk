@@ -15,4 +15,9 @@
 #
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
+$(call inherit-product, vendor/zmod/config/common.mk)
+
 PRODUCT_NAME := aosp_toro
+
+PRODUCT_PACKAGES += \
+    Launcher3
